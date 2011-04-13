@@ -1,0 +1,6 @@
+# génération du fichier messages.po à partir du fichier generate.pl
+xgettext -L Perl generate.pl 
+# éditer le fichier messages.po (encoding)
+vim messages.po
+# génération du binaire .mo
+msgfmt  -o fr-FR/LC_MESSAGES/messages.mo messages.po
